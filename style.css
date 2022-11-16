@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('fonts/Poppins-Regular.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #232427;
+    overflow-x: hidden;
+}
+
+.head {
+    height: 100vh;
+    width: 100vw;
+    background-color: #090a1a;
+    background-size: cover;
+    background-position: center;
+    justify-content: space-evenly;
+}
+
+
+.navbar {
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+}
+
+nav {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #090a1a;
+    font-family: poppins;
+    height: 8vh;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.logo span {
+    color: #647bff;
+}
+
+nav #icon {
+    display: none;
+}
+
+nav ul {
+    float: right;
+    margin-right: 100px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 60px;
+}
+
+nav a {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+a.active,
+a:hover {
+    border: 1px solid white;
+    transition: .5s;
+}
+
+.me {
+    display: flex;
+    font-family: Poppins;
+    justify-content: space-evenly;
+    padding-top: 20vh;
+    height: 62vh;
+}
+
+.me .kanan img {
+    width: 250px;
+    height: 260px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.me .kiri {
+    text-align: left;
+    flex-direction: column;
+    padding-top: 7vh;
+}
+
+.me h1 {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20px 0 40px 0;
+    font-size: 50px;
+}
+
+.me h4 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+
+.me .kiri span {
+    color: #647bff;
+}
+
+
+.head .me .kiri a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: whitesmoke;
+    background-color: #1c3cf0;
+    font-family: 'Akshar', sans-serif;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    padding: 0.5rem 1.5rem;
+    transition: .5s;
+}
+
+.head .me a:hover {
+    background-color: transparent;
+    border: 2px solid #647bff;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+
+.about {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    padding: 0 5vw 0 5vw;
+    position: relative;
+    text-align: center;
+    font-family: poppins;
+}
+
+.judul span {
+    color: red;
+}
+
+.judul h2 {
+    color: black;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'Akshar', sans-serif;
+    padding: 50px 0;
+}
+
+.judul h3 {
+    color: rgb(65, 64, 64);
+    text-align: center;
+    margin: 10px 0;
+    font-family: sans-serif;
+}
+
+.judul p {
+    color: rgb(33, 37, 41);
+    text-align: justify;
+    margin: 50px 60px;
+}

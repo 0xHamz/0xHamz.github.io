@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>H A M - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@500&family=IBM+Plex+Sans:wght@100;500&family=IBM+Plex+Serif:wght@100;700&family=Josefin+Sans&family=Poppins:wght@500&family=Roboto+Mono:wght@700&family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/06775d1089.js" crossorigin="anonymous"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show')
+            })
+        })
+    </script>
+    <script>
+        const icon = document.getElementById('icon');
+        const navbar = document.getElementById('navbar');
+
+        document.onclick = function(e){
+            if(e.target.id !== 'navbar' && e.target.id !== 'icon'){
+                icon.classList.remove('active');
+                navbar.classList.remove('active');
+            }
+
+        icon.onclick = function(){
+            icon.classList.toggle('active');
+            navbar.classList.toggle('active');
+        }
+        }
+    </script>
+</head>
+<body>
+    <div class="head">
+        <nav class="navbar" id="navbar">
+            <h2 class="logo">Port<span>Folio</span></h2>
+            <ul>
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="product.html">PRODUCT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div id="icon">
+                <i class="material-icons">menu</i>
+            </div>
+        </nav>
+        
+        <div class="me">
+            <div class="kiri">
+                <h4>Hello, My Name</h4>
+                <h1><span>H A M</span></h1>
+                <a href="https://instagram.com/xhammz">Contact Me</a>
+            </div>
+            <div class="kanan">
+                <img src="/images/dp1.png">
+            </div>
+        </div>
+        <div>
+            <svg
+              class="waves"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 24 150 28"
+              preserveAspectRatio="none"
+              shape-rendering="auto"
+            >
+              <defs>
+                <path
+                  id="gentle-wave"
+                  d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                />
+              </defs>
+              <g class="parallax">
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="0"
+                  fill="rgba(255,255,255,0.7"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="3"
+                  fill="rgba(255,255,255,0.5)"
+                />
+                <use
+                  xlink:href="#gentle-wave"
+                  x="48"
+                  y="5"
+                  fill="rgba(255,255,255,0.3)"
+                />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+              </g>
+            </svg>
+          </div>
+    </div>
+    <div class="about" id="about">
+        <div class="judul" data-aos="fade-up" data-aos-duration="800">
+            <img src="" alt=""><h2>About <span>Me</span></h2>
+            <h3></h3>
+            <p>Toko Komputer yang berada di pusat kota Solo, yang berdiri sejak Bulan April Tahun 1990. Java Computer adalah toko komputer yang terdepan dan terpercaya di kota Solo yang bergerak dibidang penjualan produk PC, Notebook, Projector, Tablet, Asesories Komputer dan Pelayanan Service. Prima Computer mengembangkan sektor bisnis IT melalui penjualan retail customer, distribusi reseller, service sparepart.</p>
+            <p><b><span>Visi</span> : Retail terbaik dalam penjualan, pelayanan, serta bermanfaat bagi pelanggan dan karyawan.</b>
+            <br><br><b><span>Misi</span> : Melayani sepenuh hati, senantiasa berinovasi dan meningkatkan profesionalisme karyawan, serta mengembangkan kemampuan diri untuk menjadi yang terbaik.</b></p>
+        </div>
+    </div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
