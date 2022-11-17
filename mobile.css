@@ -436,14 +436,14 @@
     }
 
     .head{
-        height: 95vh;
+        height: 82vh;
     }
     .me {
         display: flex;
         font-family: Poppins;
         justify-content: center;
         padding-top: 30vh;
-        height: 80vh;
+        height: 70vh;
     }
 
     .me .kanan img {
