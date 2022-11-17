@@ -435,11 +435,14 @@
         padding: 5vh 0 0 0;
     }
 
+    .head{
+        height: 95vh;
+    }
     .me {
         display: flex;
         font-family: Poppins;
         justify-content: center;
-        padding-top: 21vh;
+        padding-top: 30vh;
         height: 80vh;
     }
 
