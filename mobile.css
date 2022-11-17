@@ -390,46 +390,34 @@
 
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
     nav #icon {
         display: block;
         cursor: pointer;
     }
 
-    #head nav .logo {
+    nav .logo {
         font-size: 1.5rem;
     }
 
-    #head nav ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #232323;
-        top: 80px;
-        left: -100%;
-        transition: all 1s fade;
-        text-align: center;
-    }
-
-    #head nav li {
+    nav li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
-    }
-
-    #head nav a {
-        font-size: 20px;
+        width: 100vw;
     }
 
     a.active,
     a:hover {
-        border: none;
         color: #647bff;
-    }
-
-    #head nav ul.show {
-        left: 0;
-        top: 50px;
     }
 
     #about {
