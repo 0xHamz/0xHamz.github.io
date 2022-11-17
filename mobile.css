@@ -436,14 +436,13 @@
     }
 
     .head{
-        height: 82vh;
+        height: 85vh;
     }
     .me {
         display: flex;
-        font-family: Poppins;
-        justify-content: center;
         padding-top: 30vh;
         height: 70vh;
+        margin-left: 8vw;
     }
 
     .me .kanan img {
@@ -451,50 +450,53 @@
         height: 120px;
         text-align: center;
         flex-direction: column;
-        margin: 7vh 0 0 100px;
     }
 
     .me .kiri {
-        text-align: left;
-        flex-direction: column;
-        padding-left: 10vw;
+        padding-top: 10px;
+        display: fixed;
+        margin: 0 0 0 20px;
     }
 
     .me h1 {
         color: white;
-        font-family: 'Josefin Sans', sans-serif;
-        margin: 10px 0 20px 0;
-        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .me h4 {
         color: white;
         font-family: 'Poppins', sans-serif;
-        font-size: 15px;
+        font-size: 12px;
     }
 
 
     .me .kiri span {
         color: #647bff;
-        font-size: 40px;
+        font-size: 25px;
     }
 
-    .head .me .kiri a {
-        text-decoration: none;
-        font-size: 12px;
-        color: whitesmoke;
-        background-color: #122277;
-        font-family: 'Akshar', sans-serif;
-        border: 2px solid transparent;
-        padding: 0.5rem 1.5rem;
-        transition: .5s;
-    }
-
-    .head .me .kiri a:hover {
-        background-color: transparent;
-        border: 2px solid #647bff;
+    .sosmed a {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        color: #eee;
         cursor: pointer;
-        color: white;
+        margin-right: 15px;
+        background-color: rgb(255, 255, 255, 0.1);
+    }
+
+    .sosmed a:hover {
+        background-color: transparent;
+        cursor: pointer;
+        transition: .4s;
+        border: 1px solid white;
     }
 
     .waves {
