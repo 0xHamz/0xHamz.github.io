@@ -100,7 +100,6 @@ a:hover {
 .me .kanan img {
     width: 250px;
     height: 260px;
-    flex-direction: column;
 }
 
 .me .kiri {
@@ -215,7 +214,113 @@ a:hover {
 }
 
 .judul p {
-    color: rgb(33, 37, 41);
+    color: black;
     text-align: justify;
     margin: 50px 60px;
+}
+h3{
+    margin: 5px;
+}
+
+
+.skill{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.skill li{
+    margin: 20px 0;
+    padding: 20px 100px;
+}
+.bar{
+    background: #353b48;
+    width: 300px;
+    display: block;
+    height: 15px;
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,.1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgb(34, 105, 187)0%, rgb(135, 161, 233)100%);
+}
+
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+.python{
+    width: 80%;
+    animation: python 3s;
+}
+.js{
+    width: 60%;
+    animation: js 3s;
+}
+.c{
+    width: 75%;
+    animation: c 3s;
+}
+.php{
+    width: 80%;
+    animation: php 3s;
+}
+.ve{
+    width: 85%;
+    animation: ve 3s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes c{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+@keyframes php{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+@keyframes ve{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
 }
