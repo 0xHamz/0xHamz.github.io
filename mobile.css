@@ -172,20 +172,21 @@
 
     .skill{
         flex-direction: row;
-        font-size: 10px;
+        font-size: 8px;
+        justify-content: center;
     }
     .skill li{
-        margin: 10px 0;
-        padding: 20px 20px;
+        margin: 5px 20px;
+        padding: 10px 5px;
     }
     .bar{
-        width: 150px;
-        height: 15px;
+        width: 100px;
+        height: 10px;
         
     }
     .main-section {  
         min-height: 100vh;
-        height: 110vh;
+        height: 120vh;
         width: 100vw;
         display: flex; 
         align-items: center; 
@@ -194,14 +195,18 @@
         font-family: "Poppins", sans-serif; 
         overflow: hidden;
     } 
+    .box { 
+        margin: 10px; 
+        color: #f4fcfe; 
+        position: relative; 
+    } 
     .timeline-container { 
         position: relative; 
-        max-width: 90vw;
-
+        width: 90vw;
     } 
     .timeline-container::after { 
-        font-size: 15px;
-        height: 120vh; 
+        font-size: 16px;
+        height: 130vh; 
         left: 20px;
         top: -12%;
         position: absolute; 
@@ -209,12 +214,15 @@
         border-radius: 5px; 
         background-color: #3c3541; 
     } 
+    .bar span{
+        background: #3641dd;
+    }
     
     
     .timeline-container 
     .points { 
-        width: 15px; 
-        height: 15px; 
+        width: 12px; 
+        height: 12px; 
         border-radius: 50%; 
         background-color: #647bff; 
         position: absolute;
@@ -227,12 +235,17 @@
         position: relative;
     } 
     .year { 
-        font-size: 20px; 
+        font-size: 14px; 
         font-weight: bold; 
         letter-spacing: 1px; 
         color: #647bff; 
         top: 0; 
     } 
+    .content { 
+        padding: 20px; 
+        background-color: #3c3541; 
+        width: 80vw;  }
+
     .content h3{
         font-size: 15px;
     }
@@ -249,25 +262,32 @@
         text-align: left; }  
     
     .footer{
-        height: 15vh;
+        height: 10vh;
         overflow: hidden;
     }
-    .socmed a{
-    border-radius: 50%;
-    border: 1px solid white;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    color: white;
-    cursor: pointer;
-    background-color: transparent;
-    margin: 2px;
-    }
-    .social h3{
-        font-size: 15px;
-        margin-top: 15px;
+    .social, .socmed{
+        margin: 0;
         padding: 0;
+    }
+
+    .socmed a{
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: 1px solid white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        color: white;
+        cursor: pointer;
+        background-color: transparent;
+        margin: 5px 2px 5px 2px;
+    }
+    
+    .social h3{
+        font-size: 12px;
+        margin-top: 1px;
     }
     .social h3 a{
         text-decoration: none;
