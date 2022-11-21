@@ -172,6 +172,7 @@
 
     .skill{
         flex-direction: row;
+        font-size: 10px;
     }
     .skill li{
         margin: 10px 0;
@@ -181,4 +182,94 @@
         width: 150px;
         height: 15px;
         
+    }
+    .main-section {  
+        min-height: 100vh;
+        height: 110vh;
+        width: 100vw;
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        background-color: #090a1a; 
+        font-family: "Poppins", sans-serif; 
+        overflow: hidden;
+    } 
+    .timeline-container { 
+        position: relative; 
+        max-width: 90vw;
+
+    } 
+    .timeline-container::after { 
+        font-size: 15px;
+        height: 120vh; 
+        left: 20px;
+        top: -12%;
+        position: absolute; 
+        width: 2px;
+        border-radius: 5px; 
+        background-color: #3c3541; 
+    } 
+    
+    
+    .timeline-container 
+    .points { 
+        width: 15px; 
+        height: 15px; 
+        border-radius: 50%; 
+        background-color: #647bff; 
+        position: absolute;
+        top: 1vh;
+        z-index: 9; 
+    } 
+    .box { 
+        margin: 40px; 
+        color: #f4fcfe; 
+        position: relative;
+    } 
+    .year { 
+        font-size: 20px; 
+        font-weight: bold; 
+        letter-spacing: 1px; 
+        color: #647bff; 
+        top: 0; 
+    } 
+    .content h3{
+        font-size: 15px;
+    }
+    .content p{
+        font-size: 12px;
+    }
+    .points { 
+        left: -26px; 
+    } 
+    .box:nth-child(odd) { 
+        padding-left: 0; } 
+    .box:nth-child(even) { 
+        padding-right: 0px; 
+        text-align: left; }  
+    
+    .footer{
+        height: 15vh;
+        overflow: hidden;
+    }
+    .socmed a{
+    border-radius: 50%;
+    border: 1px solid white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 2px;
+    }
+    .social h3{
+        font-size: 15px;
+        margin-top: 15px;
+        padding: 0;
+    }
+    .social h3 a{
+        text-decoration: none;
+        color: #647bff;
     }
